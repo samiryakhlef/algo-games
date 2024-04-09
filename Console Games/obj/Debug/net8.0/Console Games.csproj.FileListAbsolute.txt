@@ -12,3 +12,4 @@ C:\Users\samir\Desktop\algo games\Console Games\obj\Debug\net8.0\refint\Console 
 C:\Users\samir\Desktop\algo games\Console Games\obj\Debug\net8.0\Console Games.pdb
 C:\Users\samir\Desktop\algo games\Console Games\obj\Debug\net8.0\Console Games.genruntimeconfig.cache
 C:\Users\samir\Desktop\algo games\Console Games\obj\Debug\net8.0\ref\Console Games.dll
+C:\Users\samir\Desktop\algo games\Console Games\obj\Debug\net8.0\Console Games.sourcelink.json
