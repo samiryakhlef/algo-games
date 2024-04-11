@@ -11,9 +11,9 @@ namespace ConsoleGames
         }
 
         public void SuperAttack(Character character)
-{
-    //
-}
+        {
+            // 
+        }
 
 
 
@@ -21,6 +21,10 @@ namespace ConsoleGames
         {
             // Implement the specific super defense for the Goblin
             Console.WriteLine("Goblin activated super defense against {character.Name}");
+
+
         }
+
     }
 }
+
