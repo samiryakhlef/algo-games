@@ -9,11 +9,11 @@ namespace ConsoleGames
         {
             this.SpecialHitOrc = specialHitOrc;
         }
-
-        public void SuperAttack(Character character)
+        public int SuperAttack(Character character)
         {
-            // Implement the specific super attack for the Orc
-            Console.WriteLine("Orc unleashed a brutal attack on: " + character.Name);
+            int increasedAttack = CalculateSuperAttack(character);
+            Console.WriteLine("dommage totale de la super attack de l'orc: " + increasedAttack);
+            return increasedAttack;
         }
 
         public void SuperDefense(Character character)

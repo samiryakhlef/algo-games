@@ -10,16 +10,17 @@ namespace ConsoleGames
             this.SpecialHitHuman = specialHitHuman;
         }
 
-        public  void SuperCounter(Character character)
+        public void SuperCounter(Character character)
         {
             // Implement the specific super counter for the Human
             Console.WriteLine("Human performed a super counter against {character.Name}");
         }
 
-        public void SuperAttack(Character character)
+        public int SuperAttack(Character character)
         {
-            // Implement the specific super attack for the Human
-            Console.WriteLine("Human performed a super attack on {character.Name}");
+            int increasedAttack = CalculateSuperAttack(character);
+            Console.WriteLine("dommage totale de la super attack of human: " + increasedAttack);
+            return increasedAttack;
         }
     }
 }

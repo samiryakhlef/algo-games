@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace ConsoleGames;
 public class Character
 {
@@ -34,37 +36,31 @@ public class Character
         defender.TakeDamage(damage);
         return damage;
     }
-
     private static bool CriticalHit(Character defender)
     {
         int criticalHitChance = 10;
         Random randomNumber = new Random();
         int ResultRandomNumber = randomNumber.Next(0, 100);
         return ResultRandomNumber <= criticalHitChance;
-    }
 
+    }
 
     public void TakeDamage(int damage)
     {
         CurrentPv = Math.Max(0, CurrentPv - damage);
     }
 
-    //créer une methode specialAtt
-    // public void SuperAttackP(Character defenseur)
-    // {
-    //     Console.WriteLine("Goblin super attack parent");
-    //     //lorsque les PV de l'attaquant ou du defenseur sont inférieur à 20Pv alors on declenche la specialAtt qui inflige 75pv en moins
-    //     if (Pv <= 20 && defenseur.Pv <= 20)
-    //     {
-    //         defenseur.Pv -= 75;
-    //     }
+    public int CalculateSuperAttack(Character defender)
+    {
+        double addAttackPercentage = 0.45;
+
+        int valueOfSuperAttack = (int)((addAttackPercentage * Attack(defender)));
+        int increasedAttack = Math.Abs(valueOfSuperAttack - CurrentPv);
+
+        return increasedAttack;
+    }
 }
 
-// public void ConsumeManaP(Character attaquant)
-// {
-//     Console.WriteLine("Goblin consume mana parent");
-//     //
-// }
 
 // public void SuperDefenseP(Character defenseur)
 // {
