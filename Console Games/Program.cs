@@ -6,7 +6,6 @@ class App
         var instanceGoblin = new Goblin("Goblin", 100, 25, 10, 75);
         instanceGoblin.Attack(new Goblin("Goblin", 100, 25, 10, 75));
         instanceGoblin.SuperAttack(new Goblin("Goblin", 100, 25, 10, 75));
-
         var instanceOrc = new Orc("Orc", 100, 25, 10, 75);
         instanceOrc.Attack(new Orc("Orc", 100, 25, 10, 75));
         instanceOrc.SuperAttack(new Orc("Orc", 100, 25, 10, 75));

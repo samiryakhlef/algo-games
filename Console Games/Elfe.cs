@@ -9,17 +9,17 @@ namespace ConsoleGames
         {
             this.SpecialHitElf = specialHitElf;
         }
+        public int SuperAttack(Character character)
+        {
+            int increasedAttack = CalculateSuperAttack(character);
+            Console.WriteLine("dommage totale de la super attack de l'elfe: " + increasedAttack);
+            return increasedAttack;
+        }
 
         public void Resurrect(Character character)
         {
             // Implementation for resurrecting a character
             Console.WriteLine("Elf resurrected {character.Name}");
-        }
-
-        public void SuperAttack(Character character)
-        {
-            // Implementation for performing a super attack on a character
-            
         }
     }
 }
