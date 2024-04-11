@@ -19,7 +19,6 @@ public class Character
         Def = def;
         SpecialAtt = specialAtt;
     }
-
     public int Attack(Character defender)
     {
         int baseDamage = Math.Max(0, Att - defender.Def);
@@ -59,8 +58,6 @@ public class Character
     //     {
     //         defenseur.Pv -= 75;
     //     }
-
-
 }
 
 // public void ConsumeManaP(Character attaquant)

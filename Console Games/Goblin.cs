@@ -11,10 +11,11 @@ namespace ConsoleGames
         }
 
         public void SuperAttack(Character character)
-        {
-            // Implement the specific super attack for the Goblin
-            Console.WriteLine("Goblin performed a super attack on " + character.Name);
-        }
+{
+    //
+}
+
+
 
         public virtual void SuperDefense(Character character)
         {
