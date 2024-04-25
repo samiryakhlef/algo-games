@@ -1,6 +1,6 @@
 namespace ConsoleGames
 {
-    public class Elf : Character, IResurrection, ISuperAttack
+    public class Elf : Character, IResurrection
     {
         private int SpecialHitElf { get; }
 
@@ -9,12 +9,12 @@ namespace ConsoleGames
         {
             this.SpecialHitElf = specialHitElf;
         }
-        public int SuperAttack(Character character)
-        {
-            int increasedAttack = CalculateSuperAttack(character);
-            Console.WriteLine("dommage totale de la super attack de l'elfe: " + increasedAttack);
-            return increasedAttack;
-        }
+        // public int SuperAttack(Character character)
+        // {
+        //     int increasedAttack = CalculateSuperAttack(character);
+        //     Console.WriteLine("dommage totale de la super attack de l'elfe: " + increasedAttack);
+        //     return increasedAttack;
+        // }
 
         public void Resurrect(Character character)
         {

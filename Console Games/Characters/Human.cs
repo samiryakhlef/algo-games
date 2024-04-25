@@ -1,6 +1,6 @@
 namespace ConsoleGames
 {
-    public class Human : Character, ISuperCounter, ISuperAttack
+    public class Human : Character, ISuperCounter
     {
         private int SpecialHitHuman { get; }
 
@@ -16,11 +16,11 @@ namespace ConsoleGames
             Console.WriteLine("Human performed a super counter against {character.Name}");
         }
 
-        public int SuperAttack(Character character)
-        {
-            int increasedAttack = CalculateSuperAttack(character);
-            Console.WriteLine("dommage totale de la super attack of human: " + increasedAttack);
-            return increasedAttack;
-        }
+        // public int SuperAttack(Character character)
+        // {
+        //     int increasedAttack = CalculateSuperAttack(character);
+        //     Console.WriteLine("dommage totale de la super attack of human: " + increasedAttack);
+        //     return increasedAttack;
+        // }
     }
 }

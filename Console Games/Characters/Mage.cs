@@ -1,6 +1,6 @@
 namespace ConsoleGames
 {
-    public class Mage : Character, IResurrection, ISuperAttack
+    public class Mage : Character, IResurrection
     {
         private int SpecialHitMage { get; }
 
@@ -10,12 +10,12 @@ namespace ConsoleGames
             this.SpecialHitMage = specialHitMage;
         }
 
-        public int SuperAttack(Character character)
-        {
-            int increasedAttack = CalculateSuperAttack(character);
-            Console.WriteLine("dommage totale de la super attack du mage: " + increasedAttack);
-            return increasedAttack;
-        }
+        // public int SuperAttack(Character character)
+        // {
+        //     int increasedAttack = CalculateSuperAttack(character);
+        //     Console.WriteLine("dommage totale de la super attack du mage: " + increasedAttack);
+        //     return increasedAttack;
+        // }
 
         public void Resurrect(Character character)
         {

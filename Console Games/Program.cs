@@ -5,10 +5,10 @@ class App
     {
         var instanceGoblin = new Goblin("Goblin", 100, 25, 10, 75);
         instanceGoblin.Attack(new Goblin("Goblin", 100, 25, 10, 75));
-        instanceGoblin.SuperAttack(new Goblin("Goblin", 100, 25, 10, 75));
-        var instanceOrc = new Orc("Orc", 100, 25, 10, 75);
-        instanceOrc.Attack(new Orc("Orc", 100, 25, 10, 75));
-        instanceOrc.SuperAttack(new Orc("Orc", 100, 25, 10, 75));
+        //instanceGoblin.SuperAttack(new Goblin("Goblin", 100, 25, 10, 75));
+        Orc orc = new("Orc", 100, 25, 10, 75);
+        orc.Attack(new Orc("Orc", 100, 25, 10, 75));
+        orc.SuperAttack(new Orc("Orc", 100, 25, 10, 75));
 
         // var instanceHuman = new Human("Human", 100, 25, 10, 75);
         // instanceHuman.Attack(new Human("Human", 100, 25, 10, 75));
@@ -23,7 +23,7 @@ class App
         // instanceElfe.SuperAttack(new Elf("Elfe", 100, 25, 10, 75));
 
         Console.WriteLine("The goblin hits the opponent with: " + instanceGoblin.Attack(new Elf("Elfe", 100, 25, 10, 75)) + "\n");
-        Console.WriteLine("The orc hits the opponent with: " + instanceOrc.Attack(new Elf("Elfe", 100, 25, 10, 75)) + "\n");
+        Console.WriteLine("The orc hits the opponent with: " + orc.Attack(new Elf("Elfe", 100, 25, 10, 75)) + "\n");
         // Console.WriteLine("The human hits the opponent with: " + instanceHuman.Attack(new Elf("Elfe", 100, 25, 10, 75))) + "\n";
         // Console.WriteLine("The mage hits the opponent with: " + instanceMage.Attack(new Elf("Elfe", 100, 25, 10, 75))) + "\n";
         // Console.WriteLine("The elf hits the opponent with: " + instanceElfe.Attack(new Elf("Elfe", 100, 25, 10, 75))) + "\n";
